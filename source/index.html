@@ -1,0 +1,36 @@
+---
+layout: default
+title:
+body-class: index
+---
+  <main class="index-container container" itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="{{ page.title }}"/>
+    <meta itemprop="description" content="{{ page.description }}"/>
+    <meta itemprop="image" content="{{ site.url }}/assets/avatar.jpg"/>
+
+    <h1 class="sr-only">Tiago Evangelista</h1>
+
+    <div class="text-center">
+      <div class="index-photo">
+        <img src="{{ site.url }}/assets/avatar.jpg" alt="" class="img-responsive"/>
+      </div>
+
+      <div class="index-logo-title">
+        <span class="tiago">Tiago</span>&nbsp;<span class="evangelista">Evangelista</span>
+      </div>
+
+      <div class="index-quote">{{ page.description | default(site.description) }}</div>
+
+      <div class="index-contact">
+        <a href="mailto:{{ site.email }}" class="index-contact-link">
+          <span class="fa fa-envelope"></span>
+          <span class="sr-only" itemprop="email">{{ site.email }}</span>
+        </a>
+        &middot;
+        <a href="http://fb.com/tiago.evan.5" target="_blank" class="index-contact-link">
+          <span class="fa fa-facebook"></span>
+          <span class="sr-only" itemprop="url">http://fb.com/tiago.evan.5</span>
+        </a>
+      </div>
+    </div>
+  </main>

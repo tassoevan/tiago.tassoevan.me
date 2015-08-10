@@ -1,0 +1,20 @@
+{
+    "name": "tassoevan/website-tiago",
+    "description": "Site estático criado para o meu irmão",
+    "require": {
+        "erusev/parsedown-extra": "~0.7.0",
+        "bcremer/sculpin-less-bundle": "dev-master"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Tasso Evangelista",
+            "email": "tasso@tassoevan.me"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Evan\\TassoEvan\\WebSite\\Bundles\\": "app/twig-markdown-filter-bundle/"
+        }
+    }
+}
